@@ -1,0 +1,5 @@
+<resources>
+    <!-- Size of each list item -->
+    <dimen name="list_item_size">88dp</dimen>
+    <dimen name="padding">16dp</dimen>
+</resources>
