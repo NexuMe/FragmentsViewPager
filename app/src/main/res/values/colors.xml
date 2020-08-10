@@ -18,13 +18,13 @@
     <!-- Text color for a category tab -->
     <color name="textColor">#A8A19E</color>
 
-    <!-- Background color for the Historic category -->
+    <!-- Background color for the informatics category -->
     <color name="specialty_informatics">#ffc107</color>
 
-    <!-- Background color for the Museums category -->
+    <!-- Background color for the IT category -->
     <color name="specialty_it">#01579B</color>
 
-    <!-- Background color for the Cultural category -->
+    <!-- Background color for the multimedia category -->
     <color name="specialty_multimedia">#E65100</color>
 
 </resources>

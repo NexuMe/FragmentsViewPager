@@ -2,7 +2,7 @@ package eu.nexume.fragmentsviewpager;
 
 
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
+import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -25,11 +25,11 @@ public class FragmentOne extends Fragment {
         View rootview = inflater.inflate(R.layout.students_list, container, false);
 
         // Create a list students
-        final ArrayList<Students> sites = new ArrayList<>();
-        sites.add(new Students("Иван Иванов", "112233"));
-        sites.add(new Students("Георги Георгиев", "992244"));
-        sites.add(new Students("Стефан Стефанов", "882255"));
-        StudentsAdapter adapter = new StudentsAdapter(getActivity(), sites, R.color.specialty_informatics);
+        final ArrayList<Students> students = new ArrayList<>();
+        students.add(new Students("Иван Иванов", "112233"));
+        students.add(new Students("Георги Георгиев", "992244"));
+        students.add(new Students("Стефан Стефанов", "882255"));
+        StudentsAdapter adapter = new StudentsAdapter(getActivity(), students, R.color.specialty_informatics);
 
         final ListView listView = rootview.findViewById(R.id.list);
         listView.setAdapter(adapter);
