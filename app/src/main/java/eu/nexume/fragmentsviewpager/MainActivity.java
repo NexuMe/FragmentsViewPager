@@ -12,8 +12,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        ZoomOutPageTransformer zoomOutPageTransformer = new ZoomOutPageTransformer();
+
         // Find the view pager that will allow the user to swipe between fragments
         ViewPager viewPager = findViewById(R.id.viewpager);
+
+        // display a different animation from the default screen slide animation
+        viewPager.setPageTransformer(true, zoomOutPageTransformer);
 
         // Create an adapter that knows which fragment should be shown on each page
         SpecialtyAdapter adapter = new SpecialtyAdapter(this, getSupportFragmentManager());
