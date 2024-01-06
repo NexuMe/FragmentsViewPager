@@ -9,12 +9,12 @@ public class Students {
     /**
      * String resource for the name the Student
      */
-    private String mStudentName;
+    private final String mStudentName;
 
     /**
      * String resource for the number of the Student
      */
-    private String mStudentNumber;
+    private final String mStudentNumber;
 
     /**
      * Create a new Site object.
@@ -34,7 +34,7 @@ public class Students {
     }
 
     /**
-     * Get the string resource for the address of the Student.
+     * Get the string resource for the number of the Student.
      */
     public String getStudentNumber() {
         return mStudentNumber;

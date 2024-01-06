@@ -10,7 +10,7 @@
     <color name="colorAccent">#d50000</color>
 
     <!-- Background color for app -->
-    <color name="tan_background">#E1BEE7</color>
+    <color name="tan_background">#F1A6FD</color>
 
     <!-- Color for a tab that displays a category name -->
     <color name="tabColor">#ffffff</color>
@@ -19,7 +19,7 @@
     <color name="textColor">#A8A19E</color>
 
     <!-- Background color for the informatics category -->
-    <color name="specialty_informatics">#ffc107</color>
+    <color name="specialty_informatics">#E68800</color>
 
     <!-- Background color for the IT category -->
     <color name="specialty_it">#01579B</color>

@@ -24,7 +24,7 @@ public class FragmentOne extends Fragment {
                              Bundle savedInstanceState) {
         View rootview = inflater.inflate(R.layout.students_list, container, false);
 
-        // Create a list students
+        // Create a list of students
         final ArrayList<Students> students = new ArrayList<>();
         students.add(new Students("Иван Иванов", "112233"));
         students.add(new Students("Георги Георгиев", "992244"));

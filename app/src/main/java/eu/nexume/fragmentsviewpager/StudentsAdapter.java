@@ -18,16 +18,16 @@ import java.util.ArrayList;
 public class StudentsAdapter extends ArrayAdapter<Students> {
 
     /**
-     * Resource ID for the background color for this list of sites
+     * Resource ID for the background color for this list of Students
      */
-    private int mColorResourceId;
+    private final int mColorResourceId;
 
     /**
      * Create a new {@link StudentsAdapter} object.
      *
      * @param context         is the current context (i.e. Activity) that the adapter is being created in.
      * @param students        is the list of {@link Students}s to be displayed.
-     * @param colorResourceId is the resource ID for the background color for this list of sites
+     * @param colorResourceId is the resource ID for the background color for this list of Students
      */
     public StudentsAdapter(Context context, ArrayList<Students> students, int colorResourceId) {
         super(context, 0, students);
@@ -44,19 +44,19 @@ public class StudentsAdapter extends ArrayAdapter<Students> {
         }
 
         // Get the {@link Students} object located at this position in the list
-        Students currentSite = getItem(position);
+        Students currentStudent = getItem(position);
 
         // Find the TextView in the list_item.xml layout with the ID name_text_view.
         TextView nameTextView = listItemView.findViewById(R.id.name_text_view);
-        // Get the name from the currentSite object and set this text on
+        // Get the name from the currentStudent object and set this text on
         // the Name TextView.
-        nameTextView.setText(currentSite.getStudentName());
+        nameTextView.setText(currentStudent.getStudentName());
 
         // Find the TextView in the list_item.xml layout with the ID address_text_view.
         TextView numberTextView = listItemView.findViewById(R.id.number_text_view);
-        // Get the address from the currentSite object and set this text on
+        // Get the address from the currentStudent object and set this text on
         // the Address TextView.
-        numberTextView.setText(currentSite.getStudentNumber());
+        numberTextView.setText(currentStudent.getStudentNumber());
 
         // Set the theme color for the list item
         View textContainer = listItemView.findViewById(R.id.text_container);
